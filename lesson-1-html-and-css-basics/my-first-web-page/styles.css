@@ -1,5 +1,5 @@
 body {
-    font-family: sans-serif;
+    font-family: 'Roboto',sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -17,6 +17,16 @@ h1 {
     text-align: center;
     margin-top: 24px;
     margin-bottom: 16px;
+    font-size: 2.5rem;
+}
+h2{font-size: 2rem;}
+h3{font-size: 1.75rem;}
+h4{font-size: 1.5rem;}
+h5{font-size: 1.25rem;}
+h6{font-size: 1rem;}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Inter',sans-serif;
+    font-weight: bold;
 }
 
 #banner {
@@ -32,6 +42,7 @@ h1 {
     flex-direction: row;
     max-width: 800px;
     margin: 0 auto;
+    font-size: 1.25rem;
 }
 
 #description {
@@ -54,7 +65,31 @@ h2 {
     max-width: 800px;
     margin: 0 auto;
 }
+#jobs-table{
+    width: 100%;
+    border: 1px solid gray;
+    border-collapse: collapse;
+}
 
+.table-header th{
+    border: 1px solid gray;
+    width: 25vh;
+    padding: 8px;
+    background-color: #7DD3FC;
+    text-align: center;
+    
+    
+}
+.table-data td{
+    border: 1px solid gray;
+    width:25vh;
+    padding: 8px;
+    
+   
+}
+#jobs-table tr:nth-child(odd){
+    background-color: antiquewhite;
+}
 h3 {
     margin-bottom: 8px;
 }
@@ -70,19 +105,20 @@ h3 {
     list-style: none;
 }
 
-#footer-links li {
+#footer-links li{
     display: inline;
     margin: 16px;
 }
 
 a{
     text-decoration: none;
+    color: #3B82F6;
+}
+a:hover{
+    color: #1E40AF;
 }
 
 #copyright {
-    color: gray;
+    color: #737373;
 }
 
-.location {
-    color: gray;
-}
