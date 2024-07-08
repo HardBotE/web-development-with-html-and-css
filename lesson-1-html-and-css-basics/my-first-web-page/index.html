@@ -142,11 +142,83 @@
     </div>
     
     <div id="application">
-        <h2>Subbmint Your Appliaction</h2>
-        <form>
-            <input type="text" id="name" name="Full Name" required>
+        <h2>Submit Your Appliaction</h2>
+        <form id="application-form">
+            <div class="application-group">
+                <div>
+                    <label for="name">Full Name</label>
+                </div>
+                <input type="text" id="name" name="Full Name" required placeholder="Jerry Smith">
+            </div>
+            
 
+            <div class="application-group">
+                <div>
+                    <label for="email">Email</label>
+                </div>
+                <input type="email" id="email" name="Email Adress" required placeholder="morty123@example.com">
+            </div>
+            
+            <div class="application-group">
+                <div>
+                    <label for="phone">Phone Number</label>
+                </div>
+                <input type="tel" id="phone" name="Phone Number" required placeholder="+0747621313">
+            </div>
+
+            <div class="application-group">
+                <div>
+                    <label for="date of birth">Date Of Birth</label>
+                </div>
+                <input type="date" id="date of birth" name="Birthday">
+            </div>
+
+            <div class="application-group">
+                <div>
+                    <label for="position">Position Applied For</label>
+                </div>
+                <select id="position" name="Position Applied">
+                    <option value="">Select an option</option>
+                    <option value="frontend">Frontend Developer</option>
+                    <option value="backend">Backend Developer</option>
+                    <option value="fullstack">Full-Stack Developer</option>
+                    <option value="HR">HR Employee</option>
+                </select>
+            </div>
+
+            <div class="application-group">
+                <div>
+                    <label for="resume">Upload Your Resume</label>
+                </div>
+                <input type="file" id="resume" name="CV" accept=".pdf,.doc,.docx" required >
+            </div>
+
+            <div class="application-group">
+                <div>
+                    <label for="motivation">Upload Your Resume</label>
+                </div>
+                <textarea id="motivation" name="motivation" placeholder="Explain what makes your suitable for the given job..."></textarea>
+
+            </div>
+            
+            <div class="application-group">
+                <div>
+                   
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms"required >
+                        I agree to the terms and conditions
+                        </label>
+                
+                </div>
+                
+            </div>
+
+            <div class="application-group">
+                <input type="submit" value="Submit your Appliaction">
+            </div>
         </form>
+
+        
     </div>
     <div id="footer">
         <ul id="footer-links">

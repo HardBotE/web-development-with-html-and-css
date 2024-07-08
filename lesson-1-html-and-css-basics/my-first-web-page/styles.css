@@ -88,12 +88,42 @@ h2 {
    
 }
 #jobs-table tr:nth-child(odd){
-    background-color: antiquewhite;
+    background-color: #BAE6FD;
 }
 h3 {
     margin-bottom: 8px;
 }
 
+#application{
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+#application-form div{
+    font-weight: 700;
+}
+
+#application-form input,select,textarea{
+    margin-top:4px;
+    font-size: 1.25rem;
+   padding:8px;
+   border-radius: 10px;
+   border: 1px solid gray;
+}
+.application-group textarea{
+    width: 80%;
+    height: 6rem;
+    font-family: 'Roboto',sans-serif;
+}
+.application-group div{
+    margin-top: 8px;;
+}
+
+.application-group input[type='checkbox']
+{
+    width: 16px;
+    height:16px;
+}
 #footer {
     background-color:#eee;
     padding: 16px;
